@@ -1,3 +1,4 @@
+import 'package:expenz/screens/onboard_screen.dart';
 import 'package:flutter/material.dart';
 void main(){
   runApp(const MyApp());
@@ -13,12 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "Inter",
       ),
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            "Hello Flutter",style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w300),),),),
+      home:OnboardingScreen()
     );
   }
 }
