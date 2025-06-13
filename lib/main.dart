@@ -1,6 +1,9 @@
 import 'package:expenz/screens/onboard_screen.dart';
 import 'package:flutter/material.dart';
-void main(){
+import 'package:shared_preferences/shared_preferences.dart';
+void main()async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await SharedPreferences.getInstance();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
